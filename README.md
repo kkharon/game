@@ -12,7 +12,7 @@ Then compile file with source code:
 Then run:
 - `./game` to launch the game.
 
-![Linux](https://ibb.co/YQdyFBn)
+![Linux](linux.png)
 ------------------
 
 ## Working on Windows
@@ -25,7 +25,7 @@ Then for example in VS Code open terminal and type:
 
 Then run `a.exe` application.
 
-![Windows](https://ibb.co/5WL2v27)
+![Windows](windows.png)
 ------------------
 
 ## Working on WEB
@@ -41,5 +41,5 @@ Then run:
 
 This command will generate html page with JS script. It's important to place all generated files to folder on your runnung LOCAL HTTP server.
 
-![WEB](https://ibb.co/Mf4PZQj)
+![WEB](web.png)
 ------------------
