@@ -12,7 +12,7 @@ Then compile file with source code:
 Then run:
 - `./game` to launch the game.
 
-![Linux](linux.png)
+![Linux](https://github.com/kkharon/game/blob/main/linux.PNG)
 ------------------
 
 ## Working on Windows
@@ -25,7 +25,7 @@ Then for example in VS Code open terminal and type:
 
 Then run `a.exe` application.
 
-![Windows](windows.png)
+![Windows](https://github.com/kkharon/game/blob/main/windows.PNG)
 ------------------
 
 ## Working on WEB
@@ -41,5 +41,5 @@ Then run:
 
 This command will generate html page with JS script. It's important to place all generated files to folder on your runnung LOCAL HTTP server.
 
-![WEB](web.png)
+![WEB](https://github.com/kkharon/game/blob/main/web.PNG)
 ------------------
