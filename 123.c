@@ -271,11 +271,11 @@ while (1)
             A=(randFloat()*5)+1;
             C=Z-Y+A;
             M=12000;
-            printf("\n MILES   SPEED   LONGITUDE     LATITUDE    COURSE\n");
-            printf("------   -----   ----------   ----------   ------\n");
+            PRINT("\n MILES   SPEED   LONGITUDE     LATITUDE    COURSE\n");
+            PRINT("------   -----   ----------   ----------   ------\n");
             while (M>0){
               P=X+1;
-              printf("%d     %.f       %.f          %.f         %.f\n",M,X,Y,Z,C);
+              PRINT("%d     %.f       %.f          %.f         %.f\n",M,X,Y,Z,C);
               
               C=Z-Y;
               X= X + (randFloat()*5000)+2000;
@@ -287,12 +287,12 @@ while (1)
                 F=F+1;
               }
             }
-            printf("\n---------IMPACT-AT- %.f -MILES-PER-HOUR--\n",X);
+            PRINT("\n---------IMPACT-AT- %.f -MILES-PER-HOUR--\n",X);
             if(F<=2) {
-              printf("-----------UPI-WIRE-SERVICE----ON-LINE- %.f : %.f : %.f:--\n",A,A+5,A+10);
-              printf("---  HAVE JUST OBSERVED EXPLOSION AT COORDINATES (%.f,0).\n",0-F);
+              PRINT("-----------UPI-WIRE-SERVICE----ON-LINE- %.f : %.f : %.f:--\n",A,A+5,A+10);
+              PRINT("---  HAVE JUST OBSERVED EXPLOSION AT COORDINATES (%.f,0).\n",0-F);
               A=(A+2)*A;
-              printf("BLAST SEEN FROM %.f MILES AWAY.  NO SURVIVORS.\n",pow(A,3));
+              PRINT("BLAST SEEN FROM %.f MILES AWAY.  NO SURVIVORS.\n",pow(A,3));
               PRINT("TRY AGAIN? ");
               char *rules_flag;
               input_string(&rules_flag);
@@ -304,10 +304,10 @@ while (1)
                 game_state = STATE_CHOOSE;
               }
             } else {
-              printf("GOOD WORK.  FRICTION OF %.f",F);
-              printf(" %% HAS CAUSED THE COURSE\n");
-              printf("OF THE UFO TO DEVIATE.  IMPACT COORDINATES ARE\n");
-              printf("NOW (%.f , %.f).  YOU MADE IT!\n",F,0-F);
+              PRINT("GOOD WORK.  FRICTION OF %.f",F);
+              PRINT(" %% HAS CAUSED THE COURSE\n");
+              PRINT("OF THE UFO TO DEVIATE.  IMPACT COORDINATES ARE\n");
+              PRINT("NOW (%.f , %.f).  YOU MADE IT!\n",F,0-F);
               PRINT("TRY AGAIN? ");
               char *rules_flag;
               input_string(&rules_flag);
@@ -321,7 +321,7 @@ while (1)
           }
     }  else
             {
-                printf( "Internal error #2, fort %d does not exist\n", game_state );
+                PRINT( "Internal error #2, fort %d does not exist\n", game_state );
                 exit( 1 );  /* bug */
             }  
   }   
